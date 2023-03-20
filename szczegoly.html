@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekwencjonowanie DNA</title>
+    <style>
+        body{background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); font-size: 30px;height:95vh;}
+        .h1{font-size: 30px; text-align: center;}
+        #stopka{text-align: center;width: 100%; background-color: aquamarine; height: 35px; position:fixed; bottom: 0; left: 0;}
+        #powrot{float: left; padding: 10px; font-size: 30px; margin-left: 5%;}
+        #wroc{float: left; margin-left: 10px; margin-top: 20px;}
+        #ramka{border-radius: 10px; border: solid black 2px; width: 200px; height: 70px;margin-top: 32px ;float: left; margin-left: 40px; background-color: aquamarine; color: black;}
+        #sek{float: left;width: 30%;margin-top: 120px; position: fixed; margin-left: 40px;border: black double; padding: 10px; height: 79%; padding-top: 0; background-color: rgba(240, 255, 255, 0.555);}
+        #pcr{float: left; margin-left: 24%; text-align: center; width: 30%; border: black double; margin-top: 120px; position: relative; height: 84.3%;background-color: rgba(240, 255, 255, 0.555)}
+        #tyt{float: left; text-align: center; position:fixed;margin-left: 40%; font-size: 55px; text-shadow: 1px 1px #000000;-webkit-text-stroke: 1px #000000; font-style: italic;  transition: font-size 500ms ease; top: 0; }
+        img{border-radius: 10px;}
+        li{text-align: left;}
+        #ele{float: left; margin-left: 69%; text-align: center; width: 28%; border: black double; margin-top: 120px; position:fixed; height: 80.2%;background-color: rgba(240, 255, 255, 0.555)}
+        .foty{border: black solid 2px;}
+        #ramka:hover{background-color: rgb(0, 255, 145); transition: 500ms;}
+    </style>
+</head>
+<body>
+    <a href="inzynieria.html">
+        <div id="ramka">
+            <div id="powrot">
+                <img src="zdj/strzalka2.png" width="50px" height="50px">
+                </div>
+                <div id="wroc">
+                <span><strong>Powrót</strong></span>
+                </div>
+            </div>
+        </a>
+       <h1 id="tyt">Technika szczegółowo</h1>
+        <div id="sek">
+        <h1 class="h1">Etapy sekwencjonowania DNA</h1>
+        <ol>
+            <li><em><b>Powielanie badanego odcinka DNA</b></em><p>Proces ten polega na wielokrotnej replikacji DNA przez użycie zwykłych i znakowanych fluorescencyjnie nukleotydów. Powstaje wiele kopii DNA o różnych długościach zakończonych znakowanymi nukleotydami.</p></li>
+            <li><em><b>Ustalanie sekwencji DNA badanego odcinka</b></em><p>Kopie DNA są ustawiane według długości, a sekwencja jest ustalana przez rejestrację emitowanego światła. Ostatecznie otrzymujemy wydruk z ciągiem liter, które oznaczają kolejne nuikleotydy.</p></li>
+        </ol>
+    </div>
+    <div id="pcr">
+        <h1 class="h1">Jak działa PCR</h1>
+        <img src="zdj/schemat.png" width="500px" class="foty">
+        <ol>
+            <li>Wyjściowa cząsteczka DNA jest zbudowana z dwóch nici.</li>
+            <li>Pod wpływem wysokiej temperatury nici DNA rozdzielają się.</li>
+            <li>Po obniżeniu temperatury polimeraza DNA dobudowuje drugą nić DNA do każdej z rozdzielonych nici.</li>
+            <li>W kolejncyh cyklach liczba kopii DNA podwaja się.</li>
+        </ol>
+    </div>
+    <div id="ele">
+        <h1 class="h1">Przebieg elektroforezy</h1>
+        <img src="zdj/ele.png" width="500px" class="foty">
+        <ol>
+            <li>Próbki DNA umieszcza się w odpowiednich miejscach na płytce i poddaje działaniu pola elektrycznego.</li>
+            <li>Pod wpływem pola elektrycznego ujemnie naładowane cząsteczki DNA przemieszczają się w kierunku bieguna dodatniego.</li>
+            <li>Cząsteczki DNA poruszają się w żelu z różną prędkością i tworzą prążki. Krótsze przemieszczają się szybciej.</li>
+        </ol>
+    </div>
+    <div id="stopka">Grzegorz Winsztal 4I</div>
+</body>
+</html>
